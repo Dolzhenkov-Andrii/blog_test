@@ -1,121 +1,112 @@
 body { 
-    background:  #222831;
-
+    background-image: url(https://орфографика.рф/800/600/https/www.wallpapertip.com/wmimgs/67-674584_beige.jpg);
+    background-size:contain;
 }
-
 .header{
-    background-color: #393E46;
     min-height: 150px;
     margin-bottom: 5px;
 }
 .head{
-    background-color: #EEEEEE;
+    
+    background-size: 75%;
     min-height: 120px;
     margin-bottom: 5px;
 }
 .h_pictures{
-    background-color: #EEEEEE;
+    font-size: 35px solid rgb(63, 63, 63);
     padding: 5px;
     min-height: 110px;
     width: 35%;
     float: left;
 }
 .h_text{
-    background-color: #EEEEEE;
+    text-align: center;/*Отображение текста по центру*/
     min-height: 120px;
-    width: 34%;
+    width: 39%;
     float: left;
 }
 .h_search{
-    background-color: #EEEEEE;
     min-height: 120px;
-    width: 30%;
+    width: 25%;
     float: right;
 }
 
 
-.all_menu{
-    background-color: #EEEEEE;
+.menu{
+    border: 2px solid #000000;
     min-height: 30px;
-}
-.all_menu > .m1 .m2:first-child{
-    border-left: 5px solid #00ADB5;
-}
-.all_menu > .m1 .m2 :last-child{
-    border-left: 5px solid #00ADB5;
-}
-.m1{
-    border-left: 5px solid #00ADB5;
-    background-color: #EEEEEE;
-    min-height: 30px;
-    width: 63%;
     float: left;
+    margin-bottom: 5px;
 }
-.m1 *{
+.menu *{
     margin: 0;
     padding: 0;
 }
-.m1 ul,
-.m1 ol{
+.menu ul,
+.menu ol{
     list-style: none;
 }
-.m1 > ul{
+.menu > ul{
     display: flex;
     justify-content: 100%;
 }
-.m1 > ul li a{
+.menu > ul li a{
     display: block;
     padding: 6px 50px;
     color: #222831;
     text-decoration: 0;
     text-transform: uppercase;
-    border-right: 5px solid #00ADB5;
 }
-.m1 > ul li {
+.menu > ul li {
     position: relative;
 }
-
-
-.m2{
-    background-color: #EEEEEE;
-    min-height: 30px;
-    width: 35%;
-    float: right;
-    border-right: 5px solid #00ADB5;
-}
-
-
 .content{
-    background-color: #393E46;
+    float: left;
+    width: 100%;
+    display: flex;
     min-height: 720px;
     margin-bottom: 5px;
 }
-.blog{
-    background-color: #EEEEEE;
+.blog_content{
+    width: 100%;
+    border:2px solid #222831;
     float: left;
+    margin-bottom: 5px;
+    margin-right: 10px;
+}
+.dop_content{
+    float: right;
     min-height: 720px;
-    width: 63%;
+}
+.blog_title{
+    float: left;
 }
 .categoriais{
-    background-color: #EEEEEE;
-    float: right;
-    min-height: 240px;
-    width: 35%;
+    border:2px solid #222831;
+    float: left;
+    min-height: 230px;
     margin-bottom: 5px;
-    padding-left: 10px;
+    width: 100%;
 }
 .delicious{
-    background-color: #EEEEEE;
-    float: right;
-    min-height: 240px;
-    width: 35%;
+    border:2px solid #222831;
+    float: left;
+    min-height: 230px;
+    margin-bottom: 10px;
+    width: 100%;
+}
+.img_content{
+    min-height: 230px;
     margin-bottom: 5px;
-    padding-left: 10px;
+    float: left;
+    width: 100%;
 }
 
 
 .footer{
-    background-color: #393E46;
-    min-height: 100%;
+    width: 100%;
+    float: left;
+    border:2px solid #222831;
+    height: 100px;
     margin-bottom: 5px;
 }
