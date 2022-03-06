@@ -1,7 +1,10 @@
 body { 
-    background-image: url(https://орфографика.рф/800/600/https/www.wallpapertip.com/wmimgs/67-674584_beige.jpg);
+    background-image: url(m_pictures/background.jpg);
     background-size:contain;
 }
+/*----------------------------
+*           ШАПКА
+*-----------------------------*/
 .header{
     min-height: 150px;
     margin-bottom: 5px;
@@ -30,9 +33,24 @@ body {
     width: 25%;
     float: right;
 }
-
+.search_block input{
+    width: 235px;
+    height: 18px;
+    background-color: #222831;
+    color: #00ADB5;
+    padding-left: 15px;
+    padding-right: 15px ;
+    border-radius: 10px;
+}
+.search_block button{
+    border-radius: 5px;
+}
+.search_block i{
+    color: #222831;
+}
 
 .menu{
+    border-radius: 10px;
     border: 2px solid #000000;
     min-height: 30px;
     float: left;
@@ -60,35 +78,77 @@ body {
 .menu > ul li {
     position: relative;
 }
+
+
+
+/*----------------------------
+*           КОНТЕНТ
+*-----------------------------*/
 .content{
-    float: left;
     width: 100%;
+    float: left;
     display: flex;
     min-height: 720px;
     margin-bottom: 5px;
 }
+.basic_content{
+    width: 100%;
+    float: left;
+    min-height: 720px;
+}
 .blog_content{
     width: 100%;
+    border-radius: 10px;
     border:2px solid #222831;
     float: left;
     margin-bottom: 5px;
     margin-right: 10px;
 }
+.blog_title{
+    float: left;
+    text-align: left;
+    padding-left: 15px;
+    border-radius: 8px;
+    border:2px solid #222831;
+    background-color: #222831;
+    color:#00ADB5;
+}
 .dop_content{
     float: right;
     min-height: 720px;
+    width: 400px;
 }
-.blog_title{
-    float: left;
-}
-.categoriais{
+.categories{
+    border-radius: 10px;
     border:2px solid #222831;
     float: left;
     min-height: 230px;
     margin-bottom: 5px;
     width: 100%;
 }
+.categories_title{
+    border-radius: 8px;
+    border:2px solid #222831;
+    background-color: #222831;
+    text-align-last: center;
+    color:#00ADB5;
+}
+.categories_content a{
+    
+    margin-left: 10px;
+    float: left;
+    min-width: min-content;
+    color: #222831;
+}
+.delicious_title{
+    border-radius: 8px;
+    border:2px solid #222831;
+    background-color: #222831;
+    text-align-last: center;
+    color:#00ADB5;
+}
 .delicious{
+    border-radius: 10px;
     border:2px solid #222831;
     float: left;
     min-height: 230px;
@@ -98,14 +158,15 @@ body {
 .img_content{
     min-height: 230px;
     margin-bottom: 5px;
-    float: left;
     width: 100%;
 }
-
-
+/*----------------------------
+*           ПОДВАЛ
+*-----------------------------*/
 .footer{
     width: 100%;
     float: left;
+    border-radius: 10px;
     border:2px solid #222831;
     height: 100px;
     margin-bottom: 5px;
