@@ -1,7 +1,22 @@
 body { 
-    background-image: url(https://орфографика.рф/800/600/https/www.wallpapertip.com/wmimgs/67-674584_beige.jpg);
+    background-image: url(m_pictures/background.jpg);
     background-size:contain;
 }
+hr {
+    border:1px solid #00ADB5;
+    border-radius: 5px;
+    /* Убираем границу */
+    background-color: #222831;
+    /* Цвет линии */
+    color: #222831;
+    /* Цвет линии для IE6-7 */
+    height: 3px;
+    /* Толщина линии */
+    width: 98%;
+}
+/*----------------------------
+*           ШАПКА
+*-----------------------------*/
 .header{
     min-height: 150px;
     margin-bottom: 5px;
@@ -20,7 +35,8 @@ body {
     float: left;
 }
 .h_text{
-    text-align: center;/*Отображение текста по центру*/
+    text-align: left;/*Отображение текста по центру*/
+    font-size: 60px;
     min-height: 120px;
     width: 39%;
     float: left;
@@ -30,10 +46,27 @@ body {
     width: 25%;
     float: right;
 }
-
+.search_block input{
+    width: 200px;
+    height: 18px;
+    background-color: #222831;
+    color: #00ADB5;
+    padding-left: 15px;
+    padding-right: 15px ;
+    border-radius: 10px;
+}
+.search_block button{
+    border-radius: 5px;
+    background-color: #222831
+}
+.search_block i{
+    color: #00ADB5;
+}
 
 .menu{
-    border: 2px solid #000000;
+    border-radius: 10px;
+    border: 2px solid #222831;
+    background-color: #222831;
     min-height: 30px;
     float: left;
     margin-bottom: 5px;
@@ -53,42 +86,112 @@ body {
 .menu > ul li a{
     display: block;
     padding: 6px 50px;
-    color: #222831;
+    color: #00ADB5;
     text-decoration: 0;
     text-transform: uppercase;
 }
 .menu > ul li {
     position: relative;
 }
+
+
+
+/*----------------------------
+*           КОНТЕНТ
+*-----------------------------*/
 .content{
-    float: left;
-    width: 100%;
-    display: flex;
-    min-height: 720px;
-    margin-bottom: 5px;
+    width: 100%;            /*Ширина контента*/
+    float: left;            /*Фиксация к левой стороне*/
+    display: flex;          /*--?--*/
+    min-height: 720px;      /*Миниммальная высота*/
+    margin-bottom: 5px;     /*Оцтуп от конца пблока снизу*/
 }
-.blog_content{
-    width: 100%;
-    border:2px solid #222831;
-    float: left;
-    margin-bottom: 5px;
-    margin-right: 10px;
-}
-.dop_content{
-    float: right;
-    min-height: 720px;
+/*--basic_content--*/
+.basic_content{
+    min-height: 720px;                /*Минимальная высота*/
+    width: 100%;                      /*Ширина контента*/
+    float: left;                      /*Фиксация слева*/
+    border: 2px solid #222831;      /*Рамка: толщина + цвет*/
+    border-radius: 10px;              /*Закругление рамки в пиксилях по всем углам одинакого*/
 }
 .blog_title{
-    float: left;
+    display: flex;                    /*Фиксация всего єлемента*/
+    justify-content: baseline;        /*Заполнение всего пространцтва*/                    
+    text-align: left;                 /*Фиксация текста с левой стороны*/
+    border-radius: 8px 8px 0px 0px ;  /*Закругление рамки в пиксилях углам конкретно*/ 
+    min-height: 10px;                 /*Минимальная высота*/
+    border:2px solid #222831;       /*Рамка: толщина + цвет*/
+    background-color: #222831;      /*Цвет фона*/
+    color:#00ADB5;                  /*Цвет текста*/
 }
-.categoriais{
+.blog_footer{
+    display: flex;                    /*Фиксация всего єлемента*/
+    justify-content: baseline;        /*Заполнение всего пространцтва*/
+    text-align-last: center;                 /*Фиксация текста с левой стороны*/
+    min-height: 0px;                  /*Минимальная высота*/
+    border-radius: 0px 0px 8px 8px ;  /*Закругление рамки в пиксилях углам конкретно*/ 
+    border:2px solid #222831;       /*Рамка: толщина + цвет*/
+    background-color: #222831;      /*Цвет фона*/
+    color:#00ADB5;                  /*Цвет текста*/
+}
+.blog_content{
+    display: flex;                    /*Фиксация всего єлемента*/
+    justify-content: baseline;        /*Заполнение всего пространцтва*/   
+    flex-direction: column;                 
+    min-height: 620px;                /*Минимальная высота*/
+}
+.content_1, img, h4, h5{
+    padding-bottom: 10px; 
+    padding-left: 10px;
+    padding-right: 10px;
+}
+.content_2, img, h4, h5 {
+    padding-bottom: 10px; 
+    padding-left: 10px;
+    padding-right: 10px;
+}
+.content_3, img, h4, h5{
+    padding-bottom: 10px; 
+    padding-left: 10px;
+    padding-right: 10px;
+}
+/*--site_bar--*/
+.site_bar{
+    margin-left: 15px;                /*Отступ слева*/
+    min-height: 720px;                /*минимальная высота*/
+    width: 400px;                     /*Фиксированая ширина*/
+}
+.categories{
+    border-radius: 10px;              
     border:2px solid #222831;
     float: left;
     min-height: 230px;
     margin-bottom: 5px;
     width: 100%;
 }
-.delicious{
+.categories_title{
+    border-radius: 8px 8px 0px 0px;
+    border:2px solid #222831;
+    background-color: #222831;
+    text-align-last: center;
+    color:#00ADB5;
+}
+.categories_content a{
+    
+    margin-left: 10px;
+    float: left;
+    min-width: min-content;
+    color: #222831;
+}
+.novelties_title{
+    border-radius: 8px 8px 0px 0px;
+    border:2px solid #222831;
+    background-color: #222831;
+    text-align-last: center;
+    color:#00ADB5;
+}
+.novelties{
+    border-radius: 10px;
     border:2px solid #222831;
     float: left;
     min-height: 230px;
@@ -98,15 +201,18 @@ body {
 .img_content{
     min-height: 230px;
     margin-bottom: 5px;
-    float: left;
     width: 100%;
 }
-
-
+/*----------------------------
+*           ПОДВАЛ
+*-----------------------------*/
 .footer{
     width: 100%;
     float: left;
+    border-radius: 10px;
     border:2px solid #222831;
-    height: 100px;
+    height: 50px;
     margin-bottom: 5px;
+    padding-left: 10px;
+    padding-top: 10px;
 }
